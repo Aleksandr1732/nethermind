@@ -33,9 +33,9 @@ EOF
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     /repos/$GITHUB_REPOSITORY/releases \
-    -f 'tag_name=$GIT_TAG' \
-    -f 'target_commitish=$GITHUB_SHA' \
-    -f 'name=v$GIT_TAG' \
+    -f "tag_name=$GIT_TAG" \
+    -f "target_commitish=$GITHUB_SHA" \
+    -f "name=v$GIT_TAG" \
     -F "draft=true" \
     -F "prerelease=$PRERELEASE" \
     -F body=@- \
@@ -54,7 +54,7 @@ for file_name in *.zip *.zip.asc; do
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     /repos/$GITHUB_REPOSITORY/releases/$release_id/assets?name=$file_name \
-    -f '@$file_name'
+    -f "@$file_name"
 done
 
 if [[ "$should_publish" == "true" ]]; then
@@ -67,8 +67,8 @@ if [[ "$should_publish" == "true" ]]; then
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     /repos/$GITHUB_REPOSITORY/releases/$release_id \
-    -f 'target_commitish=$GITHUB_SHA' \
-    -f 'name=v$GIT_TAG' \
+    -f "target_commitish=$GITHUB_SHA" \
+    -f "name=v$GIT_TAG" \
     -F "draft=false" \
     -F "make_latest=$make_latest" \
     -F "prerelease=$PRERELEASE"
