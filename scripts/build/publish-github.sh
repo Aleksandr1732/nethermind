@@ -54,6 +54,7 @@ for file_name in *.zip *.zip.asc; do
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     /repos/$GITHUB_REPOSITORY/releases/$release_id/assets?name=$file_name \
+    --hostname uploads.github.com \
     --input $file_name
 done
 
