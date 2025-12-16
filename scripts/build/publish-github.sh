@@ -37,7 +37,7 @@ EOF
     -f 'target_commitish=$GITHUB_SHA' \
     -f 'name=v$GIT_TAG' \
     -F "draft=true" \
-    -F "prerelease=$prerelease" \
+    -F "prerelease=$PRERELEASE" \
     -F body=@- \
     | jq -r '.id')
 
