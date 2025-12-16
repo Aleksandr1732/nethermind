@@ -54,7 +54,7 @@ for file_name in *.zip *.zip.asc; do
     -H "Accept: application/vnd.github+json" \
     -H "X-GitHub-Api-Version: 2022-11-28" \
     /repos/$GITHUB_REPOSITORY/releases/$release_id/assets?name=$file_name \
-    -f @$file_name
+    --input "@$file_name"
 done
 
 if [[ "$should_publish" == "true" ]]; then
