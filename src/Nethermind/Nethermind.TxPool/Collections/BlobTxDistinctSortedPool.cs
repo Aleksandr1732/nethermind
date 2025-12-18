@@ -8,7 +8,6 @@ using Nethermind.Core.Collections;
 using Nethermind.Core.Crypto;
 using Nethermind.Core.Extensions;
 using Nethermind.Core.Threading;
-using Nethermind.Crypto;
 using Nethermind.Logging;
 using System;
 using System.Collections.Generic;

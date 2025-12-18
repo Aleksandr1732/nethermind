@@ -22,7 +22,6 @@ using Nethermind.Api;
 using Nethermind.Blockchain;
 using Nethermind.Merge.Plugin.Data;
 using Nethermind.Merge.Plugin.Handlers;
-using Nethermind.Consensus.Processing;
 using Nethermind.Facade.Eth.RpcTransaction;
 using Nethermind.Serialization.Rlp;
 

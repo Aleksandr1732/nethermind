@@ -1,7 +1,6 @@
 // SPDX-FileCopyrightText: 2023 Demerzel Solutions Limited
 // SPDX-License-Identifier: LGPL-3.0-only
 
-using System.Collections.Generic;
 using FluentAssertions;
 using Nethermind.Blockchain.Filters;
 using Nethermind.Core;

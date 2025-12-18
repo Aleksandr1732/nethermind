@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using Nethermind.Api;
 using Nethermind.Api.Steps;
 using Nethermind.Blockchain;
-using Nethermind.Blockchain.Spec;
 using Nethermind.Config;
 using Nethermind.Consensus;
 using Nethermind.Consensus.Comparers;
@@ -18,7 +17,6 @@ using Nethermind.Consensus.Producers;
 using Nethermind.Consensus.Scheduler;
 using Nethermind.Core;
 using Nethermind.Core.Attributes;
-using Nethermind.State;
 using Nethermind.TxPool;
 using Nethermind.Wallet;
 

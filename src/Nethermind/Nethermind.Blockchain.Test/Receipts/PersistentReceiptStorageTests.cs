@@ -4,7 +4,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 using FluentAssertions;
 using FluentAssertions.Equivalency;
@@ -21,7 +20,6 @@ using Nethermind.Serialization.Rlp;
 using Nethermind.Specs;
 using Nethermind.Specs.Forks;
 using NSubstitute;
-using NSubstitute.Core;
 using NUnit.Framework;
 
 namespace Nethermind.Blockchain.Test.Receipts;

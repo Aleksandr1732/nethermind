@@ -8,7 +8,6 @@ using Nethermind.Core.Extensions;
 using Nethermind.Core.Test;
 using Nethermind.Db.Rocks.Config;
 using Nethermind.Logging;
-using NSubstitute;
 using NUnit.Framework;
 
 namespace Nethermind.Db.Test;

@@ -6,7 +6,6 @@ using Autofac;
 using Autofac.Core;
 using Nethermind.Blockchain;
 using Nethermind.Evm.State;
-using Nethermind.Specs.ChainSpecStyle;
 
 namespace Nethermind.Core.Test.Container;
 

@@ -23,7 +23,6 @@ using Nethermind.Db;
 using Nethermind.Serialization.Rlp;
 using Nethermind.State;
 using Nethermind.State.SnapServer;
-using Nethermind.Trie.Pruning;
 using AccountRange = Nethermind.State.Snap.AccountRange;
 
 namespace Nethermind.Synchronization.Test.SnapSync;
